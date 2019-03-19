@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "lastUpdated":"2018-04-30T16:04:20Z",
+  "origin": "https://vendorlist.consensu.org/vendorlist.json",
+	"purposes":[
+		{
+			"id":1,
+			"name":"情報の保管とアクセス",
+			"description":"広告識別子や他のデバイス識別子へのアクセス、Cookieや同様のテクノロジの使用など、お客様のデバイスへの情報の保存、またはすでに保存されている情報へのアクセス。"
+		},
+		{
+			"id":2,
+			"name":"パーソナライズ",
+			"description":"このサイトの利用に関する情報を収集して処理し、その後、他のコンテキスト、つまり他のサイトやアプリで、時間の経過とともに広告をパーソナライズすること。通常、サイトやアプリのコンテンツは、将来の選択を通知するあなたの興味についての推論をするために使用されます。"
+		},
+		{
+			"id":3,
+			"name":"広告選択、配信、レポート",
+			"description":"お客様のために広告を選択して配信し、そのような広告の配信および有効性を測定するための、情報の収集、および以前に収集された情報との組み合わせ。これには、以前収集した興味に関する情報を使用した広告の選択、表示された広告、表示された頻度、表示された日時と場所、広告のクリックなど、広告に関する操作を行ったかどうかに関するデータの処理が含まれます。広告や購入をする。 "
+		},
+		{
+			"id":4,
+			"name":"コンテンツの選択、配信、報告",
+			"description":"情報を収集し、以前に収集した情報と組み合わせて、コンテンツを選択して配信し、そのようなコンテンツの配信と有効性を測定します。これには、以前に収集した関心に関する情報を使用したコンテンツの選択、表示されたコンテンツ、表示される頻度または表示時間、表示される時間と場所、およびコンテンツに関連する行動の有無などのデータの処理が含まれます。例えばコンテンツをクリックする。 "
+		},
+		{
+			"id":5,
+			"name":"測定",
+			"description":"コンテンツの使用に関する情報の収集、および以前に収集された情報との組み合わせ。コンテンツの使用に関する測定、理解、および報告に使用されます。"
+		}
+	],
+	"features":[
+		{
+			"id":1,
+			"name":"オフラインソースへのデータのマッチング",
+			"description":"他のコンテキストで最初に収集されたオフラインソースからのデータを組み合わせる。"
+		},
+		{
+			"id":2,
+			"name":"デバイスのリンク",
+			"description":"ユーザーのデータを処理して、そのようなユーザーを複数のデバイスに接続できるようにします。"
+		},
+		{
+			"id":3,
+			"name":"正確な地理的位置データ",
+			"description":"その特定の第三者が同意している目的をサポートするために、ユーザーの正確な地理的位置データの処理を許可します。"
+		}
+	],
+  "vendors": [
+		{
+		  "id": 1,
+		  "name": "Globex",
+		  "policyUrl":"https://www.example.com/",
+		  "purposeIds": [1,2,4],
+		  "legIntPurposeIds": [3,5],
+		  "featureIds":[1,2]
+		},
+		{
+		  "id": 2,
+		  "name": "Initech",
+		  "policyUrl":"https://www.example.com/",
+			"purposeIds":[1,3,5],
+			"legIntPurposeIds":[],
+			"featureIds":[3]
+		},
+		{
+		  "id": 3,
+		  "name": "CRS",
+		  "policyUrl":"https://www.example.com/",
+			"purposeIds":[1,2,3,4,5],
+			"legIntPurposeIds":[],
+			"featureIds":[1,2,3]
+		},
+		{
+		  "id": 4,
+		  "name": "Umbrella",
+		  "policyUrl":"https://www.example.com/",
+			"purposeIds":[1,3,5],
+			"legIntPurposeIds":[4],
+			"featureIds":[1,3]
+		},
+		{
+		  "id": 5,
+		  "name": "Aperture",
+		  "policyUrl":"https://www.example.com/",
+			"purposeIds":[1,3,5],
+			"legIntPurposeIds":[],
+			"featureIds":[3]
+		},
+		{
+		  "id": 6,
+		  "name": "Pierce and Pierce",
+		  "policyUrl":"https://www.example.com/",
+			"purposeIds":[1,3,5],
+			"legIntPurposeIds":[],
+			"featureIds":[3]
+		}
+	]
+}
